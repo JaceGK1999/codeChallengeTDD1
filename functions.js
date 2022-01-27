@@ -82,7 +82,11 @@ Output:
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    return true;
+    let array = new Array();
+    array[firstNumber];
+    array[secondNumber];
+    array[thirdNumber];
+    return array;
 }
 
 // This function should take in three numbers and return those numbers mushed together as a string
