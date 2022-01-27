@@ -40,6 +40,20 @@ test('multiplyBySeven', (expect) => {
 //     expect.equal(actual, expected);
 // });
 
+test('multiply by twelve then halve', (expect) => {
+    const expect1 = 6;
+    const expect2 = 30;
+    const expect3 = 60;
+
+    const actual1 = multiplyBy12ThenHalve(1);
+    const actual2 = multiplyBy12ThenHalve(5);
+    const actual3 = multiplyBy12ThenHalve(10);
+
+    expect.equal(actual1, expect1);
+    expect.equal(actual2, expect2);
+    expect.equal(actual3, expect3);
+
+});
 
 // skip('this test should be skipped', (expect) => {
 //     const expected = true;
