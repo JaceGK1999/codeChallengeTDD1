@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { addExclamationPoints, multiplyBy12ThenHalve, multiplyBySeven, divideThenMultiply, returnAsAnArray, returnAsAString } from '../functions.js';
+import { addExclamationPoints, multiplyBy12ThenHalve, multiplyBySeven, divideThenMultiply, returnAsAnArray, returnAsAString, makeLuckyGreeting } from '../functions.js';
 
 const { test, skip } = QUnit;
 
@@ -98,6 +98,19 @@ test('return numbers as a string', (expect) => {
     expect.equal(actual3, expected3);
 });
 
+test('make a greeting', (expect) => {
+    const expect1 = 'Hello! Your lucky number for the day is 12.';
+    const expect2 = 'Hello! Your lucky number for the day is 42.';
+    const expect3 = 'Hello! Your lucky number for the day is 36.';
+
+    const actual1 = makeLuckyGreeting(12, 0);   
+    const actual2 = makeLuckyGreeting(41, 1);   
+    const actual3 = makeLuckyGreeting(30, 6);
+
+    expect.equal(actual1, expect1);
+    expect.equal(actual2, expect2);
+    expect.equal(actual3, expect3);
+});
 
 // skip('this test should be skipped', (expect) => {
 //     const expected = true;
