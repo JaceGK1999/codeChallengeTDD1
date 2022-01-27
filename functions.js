@@ -143,7 +143,7 @@ export function getSecondItem(array) {
 /* 
 Input:
 
-['kiwi', 'apple', 'orange', 'plum']
+['kiwi', 'apple', 'orange','banana', 'plum']
 
 Output: 
 
@@ -152,7 +152,7 @@ Output:
 */
 
 export function getLastItem(array) {
-    return true;
+    return array[array.length - 1];
 }
 
 // Bonus question:
