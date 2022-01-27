@@ -82,10 +82,8 @@ Output:
 */
 
 export function returnAsAnArray(firstNumber, secondNumber, thirdNumber) {
-    let array = new Array();
-    array[firstNumber];
-    array[secondNumber];
-    array[thirdNumber];
+    // let arrayMaker = new Array(firstNumber, secondNumber, thirdNumber);
+    let array = [firstNumber, secondNumber, thirdNumber];
     return array;
 }
 

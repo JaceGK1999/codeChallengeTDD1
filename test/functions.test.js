@@ -1,5 +1,5 @@
 // IMPORT MODULES under test here:
-import { addExclamationPoints, multiplyBy12ThenHalve, multiplyBySeven, returnAsAnArray } from '../functions.js';
+import { addExclamationPoints, multiplyBy12ThenHalve, multiplyBySeven, divideThenMultiply, returnAsAnArray } from '../functions.js';
 
 const { test, skip } = QUnit;
 
@@ -75,9 +75,13 @@ test('return numbers as an array', (expect) => {
     const expected2 = [4, 5, 6];
     const expected3 = [7, 8, 9];
 
-    const actual = re();
+    const actual1 = returnAsAnArray(1, 2, 3);
+    const actual2 = returnAsAnArray(4, 5, 6);
+    const actual3 = returnAsAnArray(7, 8, 9);
 
-    expect.equal(actual, expected);
+    expect.deepEqual(actual1, expected1);
+    expect.deepEqual(actual2, expected2);
+    expect.deepEqual(actual3, expected3);
 });
 // skip('this test should be skipped', (expect) => {
 //     const expected = true;
