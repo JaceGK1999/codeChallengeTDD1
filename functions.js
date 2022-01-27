@@ -14,7 +14,7 @@ Output:
 
 export function addExclamationPoints(text) {
     
-    return text + '!!!' ;
+    return `${text}!!!` ;
 }
 
 
