@@ -163,7 +163,20 @@ export function getLastItem(array) {
 
 // Ask yourself: even if you cannot predict the result exactly, what _do_ you know about what it should return? Use that expectation to write your test
 
-export function getRandomNumber() {
-    let rand = Math.floor(Math.random() * 6);
+export function getRandomNumber(end) {
+    let rand = Math.floor(Math.random() * (end + 1));
     return rand;
+    
 }
+    // // 
+    // const actual = getRandomNumber(finish);
+    // // let expected = // a number between 0 and finish
+    // const expected = getRandomNumber(5);
+    // let num = actual;
+    // let test = true;
+    // // console.log('hey ', expected);
+    // if( >= num > 0) {
+    // }
+
+        // const num2 = getRandomNumber(5);
+    // let string = '';

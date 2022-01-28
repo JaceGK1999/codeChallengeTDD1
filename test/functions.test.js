@@ -141,12 +141,28 @@ test('pull last item from the array', (expect) => {
 });
 
 
-test('multiplyBySeven', (expect) => {
-    const expect1 = ;
-   
-    const actual1 = getRandomNumber();
+// test('get random number', (assert) => {
+// //first test
+//     const actual1 = getRandomNumber(5);
+//     let passed = undefined;
 
+//     if(num1 is between 0 and end){
+//         // test passed
+//         passed = true;
+//     }
+    
+//     assert.notEqual(passed);
 
-    expect.true(actual1, expect1);
+// });
 
+test('I want a number between 0 and end', (expect) => {
+    const actual = getRandomNumber(5);
+    const expected = 5 >= actual >= 0; 
+    expect.ok(expected);
+});
+
+test('I want a number between 0 and 10', (expect) => {
+    const actual = getRandomNumber(10);
+    // const expected = 1 >= num >= 0; 
+    expect.ok(actual <= 10 && actual >= 0);
 });
